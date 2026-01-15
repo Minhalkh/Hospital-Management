@@ -15,7 +15,7 @@ function registrationform() {
           <h1>Receptionist</h1>
           </div>
           <div>
-            <form action="">
+            <form action="" className=''>
             <h2 className='ml-40 text-3xl'>Register as a Patient</h2>
             <input type="text"
             name='name'
@@ -33,8 +33,14 @@ function registrationform() {
             name=''
             placeholder='Your Phone*'
             className='rounded border' />
-            <input type="text" />Password
-            <input type="text" />Confirm Password 
+            <input type="text" 
+            name='Password'
+            placeholder='Password'
+            className='rounded border'/>
+            <input type="text" 
+            name=''
+            placeholder='Confirm Password'
+            className='rounded border'/> 
             </form>
           </div>
         </div>
