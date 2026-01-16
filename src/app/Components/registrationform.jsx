@@ -8,6 +8,7 @@ function registrationform() {
         <Image src={Logo} alt='Logo' className='size-20'/>
         <h1 className='text-white text-2xl font-bold'>Welcome</h1>
         </div>
+        
         <div className='bg-white h-100 w-170'>
           <div className='flex justify-end w-70 h-8 p-1 bg-blue-700 rounded-2xl text-white gap-10 mt-8 mx-90'>
           <h1>Patient</h1>
@@ -15,32 +16,43 @@ function registrationform() {
           <h1>Receptionist</h1>
           </div>
           <div>
-            <form action="" className=''>
             <h2 className='ml-40 text-3xl'>Register as a Patient</h2>
-            <input type="text"
-            name='name'
-            placeholder='First Name*'
-            className='rounded border' />
-            <input type="text"
-            name='name'
-            placeholder='Last Name*'
-            className='rounded border' />
-            <input type="text" 
-            name='Email'
-            placeholder='Your Email*'
-            className='rounded border'/>
-            <input type="text"
-            name=''
-            placeholder='Your Phone*'
-            className='rounded border' />
-            <input type="text" 
-            name='Password'
-            placeholder='Password'
-            className='rounded border'/>
-            <input type="text" 
-            name=''
-            placeholder='Confirm Password'
-            className='rounded border'/> 
+            <form action="" className='grid grid-cols-2 gap-30 mx-4 my-8'>
+              <div className='grid gap-4'>
+              <input type="text"
+              name='name'
+              placeholder='First Name*'
+              className='rounded-xl border' />
+              
+              <input type="text"
+              name='name'
+              placeholder='Last Name*'
+              className='rounded-full border' />
+
+              <input type="text" 
+              name='Email'
+              placeholder='Your Email*'
+              className='rounded-full border'/>
+              </div>
+
+              <div className='grid gap-4'>
+                
+                <input type="text"
+                name=''
+                placeholder='Your Phone*'
+                className='rounded-full border' />
+
+                <input type="text" 
+                name='Password'
+                placeholder='Password'
+                className='rounded-full border'/>
+
+                <input type="text" 
+                name=''
+                placeholder='Confirm Password'
+                className='rounded-full border'/> 
+              </div>
+              
             </form>
           </div>
         </div>
