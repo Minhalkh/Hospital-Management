@@ -3,36 +3,37 @@ import React from 'react'
 import Logo from '../../../public/assets/images/ambulance1.png'
 function registrationform() {
   return (
-    <div className='flex justify-between mx-10'>
-        <div className='flex flex-col gap-10'>
-        <Image src={Logo} alt='Logo' className='size-20'/>
-        <h1 className='text-white text-2xl font-bold'>Welcome</h1>
+    <div className='flex justify-between my-14 mx-8'>
+        <div className='flex flex-col gap-4 my-28 ml-30'>
+        <Image src={Logo} alt='Logo' className='size-14 ml-8 animate-bounce'/>
+        <h1 className='text-white text-3xl'>Welcome</h1>
         </div>
         
-        <div className='bg-white h-100 w-170'>
-          <div className='flex justify-end w-70 h-8 p-1 bg-blue-700 rounded-2xl text-white gap-10 mt-8 mx-90'>
+        <div className='bg-white h-120 w-200 rounded-l-4xl'>
+          <div className='flex justify-end w-70 h-8 p-1 bg-blue-700 rounded-2xl text-white gap-10 mt-8 ml-125'>
           <h1>Patient</h1>
           <h1>Doctor</h1>
           <h1>Receptionist</h1>
           </div>
           <div>
-            <h2 className='ml-40 text-3xl'>Register as a Patient</h2>
-            <form action="" className='grid grid-cols-2 gap-30 mx-4 my-8'>
+            <h2 className='ml-70 mt-2 text-3xl'>Register as a Patient</h2>
+            <form action="">
+              <div className='grid grid-cols-2 gap-8 mx-10 mt-10'>
               <div className='grid gap-4'>
               <input type="text"
               name='name'
               placeholder='First Name*'
-              className='rounded-xl border' />
+              className='rounded-lg border h-8' />
               
               <input type="text"
               name='name'
               placeholder='Last Name*'
-              className='rounded-full border' />
+              className='rounded-lg border h-8' />
 
               <input type="text" 
               name='Email'
               placeholder='Your Email*'
-              className='rounded-full border'/>
+              className='rounded-lg border h-8'/>
               </div>
 
               <div className='grid gap-4'>
@@ -40,20 +41,33 @@ function registrationform() {
                 <input type="text"
                 name=''
                 placeholder='Your Phone*'
-                className='rounded-full border' />
+                className='rounded-lg border h-8' />
 
                 <input type="text" 
                 name='Password'
                 placeholder='Password'
-                className='rounded-full border'/>
+                className='rounded-lg border h-8'/>
 
                 <input type="text" 
                 name=''
                 placeholder='Confirm Password'
-                className='rounded-full border'/> 
+                className='rounded-lg border h-8'/> 
               </div>
-              
+              </div> 
             </form>
+            <div className='flex gap-2 ml-14 my-4'>
+              <input type="radio"
+              name="Gender" id="" 
+              value="Male" />
+              <span>Male</span>
+              <input type="radio" name="Gender" id=""
+              value="Female" />
+              <span>Female</span>
+              </div>
+              <div className='ml-14 flex justify-between mx-20'>
+                <h1 className='text-blue-700'>Already Have an Account?</h1>
+                <button className='border h-10 w-38 bg-blue-600 text-white font-bold rounded-full'>Register</button>
+              </div>
           </div>
         </div>
     </div>
