@@ -1,12 +1,16 @@
 "use client"
 import Image from 'next/image'
 import { useState } from 'react'
-import Logo from '../../../public/assets/images/ambulance1.png'
+import Logo from '../../../../public/assets/images/ambulance1.png'
+import Doctor from './doctor'
 import Link from 'next/link'
-function registrationform() {
-  const [gender, setGender] = useState ("")
+
+
+function Patient() {
+    const [gender, setGender] = useState ("")
+    const [options, setOptions] = useState(1)
   return (
-    <div className='flex justify-between my-14 mx-8'>
+     <div className='flex justify-between my-14 mx-8'>
         <div className='flex flex-col gap-4 my-28 ml-30'>
         <Image src={Logo} alt='Logo' className='size-14 ml-8 animate-bounce'/>
         <h1 className='text-white text-3xl'>Welcome</h1>
@@ -14,11 +18,12 @@ function registrationform() {
         
         <div className='bg-white h-120 w-200 rounded-l-[110px]'>
           <div className='flex justify-end w-70 h-8 p-1 bg-blue-700 rounded-2xl text-white gap-10 mt-8 ml-125'>
-          <h1>Patient</h1>
-          <h1>Doctor</h1>
-          <h1>Receptionist</h1>
+          <button className='cursor-pointer' onClick={()=>setOptions(1)}>Patient</button>
+          <button className='cursor-pointer' onClick={()=>setOptions(2)}>Doctor</button>
+          <button className='cursor-pointer' onClick={()=>setOptions(3)}>Receptionist</button>
           </div>
-          <div>
+{
+ options==1 && <div>
             <h2 className='ml-70 mt-2 text-[clamp(1.5rem,2vw,3rem)] '>Register as a Patient</h2>
             <form action="">
               <div className='grid grid-cols-2 gap-8 mx-10 mt-10'>
@@ -36,7 +41,7 @@ function registrationform() {
               <input type="text" 
               name='Email'
               placeholder='Your Email*'
-              className='rounded-lg border h-8p-2'/>
+              className='rounded-lg border h-8 px-2'/>
               </div>
 
               <div className='grid gap-4'>
@@ -44,17 +49,17 @@ function registrationform() {
                 <input type="text"
                 name=''
                 placeholder='Your Phone*'
-                className='rounded-lg border h-8' />
+                className='rounded-lg border h-8 px-2' />
 
                 <input type="text" 
                 name='Password'
-                placeholder='Password'
-                className='rounded-lg border h-8'/>
+                placeholder='Password*'
+                className='rounded-lg border h-8 px-2'/>
 
                 <input type="text" 
                 name=''
-                placeholder='Confirm Password'
-                className='rounded-lg border h-8'/> 
+                placeholder='Confirm Password*'
+                className='rounded-lg border h-8 px-2'/> 
               </div>
               </div> 
             </form>
@@ -73,13 +78,14 @@ function registrationform() {
               </div>
               <div className='ml-14 flex justify-between mx-20'>
                 <Link href="#" className='text-blue-700 hover:underline'>Already Have an Account?</Link>
-                <a href="#" className='text-blue-700 hover:underline'>Already Have an Account?</a>
                 <button className='border h-10 w-38 bg-blue-600 text-white font-bold rounded-full'>Register</button>
               </div>
           </div>
+}
+       {options==2 && <Doctor/>}   
         </div>
     </div>
   )
 }
 
-export default registrationform
+export default Patient

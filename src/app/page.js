@@ -1,8 +1,8 @@
-import Registrationform from "./Components/registrationform"
+import Homepage from "../app/Pages/Home/page"
 function Home() {
   return (
     <div>
-      <Registrationform/>
+      <Homepage/>
     </div>
   )
 }
