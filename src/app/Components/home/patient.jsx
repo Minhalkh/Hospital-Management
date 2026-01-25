@@ -17,10 +17,12 @@ function Patient() {
         </div>
         
         <div className='bg-white h-120 w-200 rounded-l-[110px]'>
-          <div className='flex justify-end w-70 h-8 p-1 bg-blue-700 rounded-2xl text-white gap-10 mt-8 ml-125'>
+          <div className='w-64 h-9 bg-blue-700 ml-127 mt-4 rounded-full'>
+          <div className='p-1 text-white flex justify-around'>
           <button className='cursor-pointer' onClick={()=>setOptions(1)}>Patient</button>
           <button className='cursor-pointer' onClick={()=>setOptions(2)}>Doctor</button>
           <button className='cursor-pointer' onClick={()=>setOptions(3)}>Receptionist</button>
+          </div>
           </div>
 {
  options==1 && <div>
@@ -78,7 +80,7 @@ function Patient() {
               </div>
               <div className='ml-14 flex justify-between mx-20'>
                 <Link href="#" className='text-blue-700 hover:underline'>Already Have an Account?</Link>
-                <button className='border h-10 w-38 bg-blue-600 text-white font-bold rounded-full'>Register</button>
+                <button className='border h-10 w-38 bg-blue-600 text-white font-bold rounded-full cursor-pointer'>Register</button>
               </div>
           </div>
 }

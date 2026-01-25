@@ -8,19 +8,14 @@ function navbar() {
         {/* Left side of navbar */}
         <div className='flex gap-4 text-white mr-[-3]'>
             <Image src={Logo} alt='logo' className='size-8'/>
-            <h1 className='text-2xl'>GLOBAL HOSPITALS</h1>
+            <h1 className='text-2xl cursor-pointer'>GLOBAL HOSPITALS</h1>
         </div>
         {/* Right side of Navbar */}
-        <div className='flex flex-row gap-12 text-white text-base'>
-            <div>
-                <h1>HOME</h1></div>
-                 <div>
-                    <h1>ABOUT US</h1>
-                 </div>
-               <div>
-               <h1>CONTACT</h1>
-                </div>
-        </div>
+        <ul className='flex flex-row gap-12 text-white text-base'>
+                <li className='cursor-pointer'>HOME</li>
+                    <li className='cursor-pointer'>ABOUT US</li>
+               <li className='cursor-pointer'>CONTACT</li>
+        </ul>
     </nav>
   )
 }
