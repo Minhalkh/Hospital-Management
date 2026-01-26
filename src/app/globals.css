@@ -4,4 +4,8 @@
   .escape {
     @apply bg-gradient-to-r from-[#3931af] to-[#00c6ff] bg-cover;
   }
+
+  .selected-option{
+    @apply bg-white text-[#0062cc] rounded-2xl px-2
+  }
 }

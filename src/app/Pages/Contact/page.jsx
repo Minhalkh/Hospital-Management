@@ -1,10 +1,9 @@
 import React from 'react'
-import Navbar from '@/app/Components/navbar'
 
 function page() {
   return (
     <div>
-      <Navbar/>
+      sdjs
     </div>
   )
 }

@@ -1,6 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
+import Link from 'next/link'
 import Logo from '../../../public/assets/images/ambulance1.png'
+import About from "../Pages/About/page"
+import Contact from "../Pages/Contact/page"
 
 function navbar() {
   return (
@@ -12,9 +15,12 @@ function navbar() {
         </div>
         {/* Right side of Navbar */}
         <ul className='flex flex-row gap-12 text-white text-base'>
-                <li className='cursor-pointer'>HOME</li>
-                    <li className='cursor-pointer'>ABOUT US</li>
-               <li className='cursor-pointer'>CONTACT</li>
+                <li>
+                  <Link href="/" className="cursor-pointer">Home</Link></li>
+                    <li>
+                      <Link href="/../Pages/About" className="cursor-pointer">About Us</Link></li>
+               <li>
+                <Link href="../Pages/Contact" className="cursor-pointer">Contact</Link></li>
         </ul>
     </nav>
   )

@@ -1,9 +1,9 @@
 import React from 'react'
 
-function doctor() {
+function receptionist() {
   return (
     <div className=''>
-      <h2 className='ml-70 mt-2 text-[clamp(1.5rem,2vw,3rem)] '>Login As Doctor</h2>
+      <h2 className='ml-70 mt-2 text-[clamp(1.5rem,2vw,3rem)] '>Login As Admin</h2>
                     <form action="">
                       <div className='grid grid-cols-2 gap-8 mx-20 mt-10'>
                       <input type="text"
@@ -25,4 +25,4 @@ function doctor() {
   )
 }
 
-export default doctor
+export default receptionist
