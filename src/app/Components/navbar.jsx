@@ -7,7 +7,7 @@ import Contact from "../Pages/Contact/page"
 
 function navbar() {
   return (
-    <nav className='flex justify-between items-center mx-28 my-6'>
+    <nav className='flex justify-between items-center mx-18 my-6'>
         {/* Left side of navbar */}
         <div className='flex gap-4 text-white mr-[-3]'>
             <Image src={Logo} alt='logo' className='size-8'/>
