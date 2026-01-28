@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import img1 from '../../../../public/assets/images/img-1.png'
+import img6 from '../../../../public/assets/images/img-6.png'
 import doctor from '@/app/Components/home/doctor'
 
 function page() {
@@ -32,6 +33,37 @@ function page() {
       <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi molestias quis maxime modi.</p></div>
       <div><h1 className='text-xl my-4'>Get a diagnostic report</h1>
       <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi molestias quis maxime modi.</p></div>
+    </div>
+    <div className='flex justify-around mt-20 px-24'>
+      <div>
+        <Image src={img6} alt='BoyDoctor' className='w-[400px] ml-20'/>
+      </div>
+      <div className='grid grid-cols-2 gap-x-12 max-w-[600px]'>
+        <div>
+        <h1 className='text-xl'>Medical checkup</h1>
+        <p>Vestibulum tincidunt enim in pharetra malesuada.</p>
+        </div>
+        <div>
+          <h1 className='text-xl'>Gyn Care</h1>
+        <p>Vestibulum tincidunt enim in pharetra malesuada.</p>
+        </div>
+        <div>
+          <h1 className='text-xl'>Nursing Services</h1>
+        <p>Vestibulum tincidunt enim in pharetra malesuada.</p>
+        </div>
+        <div>
+          <h1 className='text-xl'>Neurology</h1>
+        <p>Vestibulum tincidunt enim in pharetra malesuada.</p>
+        </div>
+        <div>
+          <h1 className='text-xl'>Pharmacy</h1>
+        <p>Vestibulum tincidunt enim in pharetra malesuada.</p>
+        </div>
+        <div>
+          <h1 className='text-xl'>Sleep Center</h1>
+        <p>Vestibulum tincidunt enim in pharetra malesuada.</p>
+        </div>
+      </div>
     </div>
     </div>
   )
