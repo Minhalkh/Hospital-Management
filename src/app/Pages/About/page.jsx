@@ -3,6 +3,7 @@ import Image from 'next/image'
 import img1 from '../../../../public/assets/images/img-1.png'
 import img6 from '../../../../public/assets/images/img-6.png'
 import doctor from '@/app/Components/home/doctor'
+import Footer from '@/app/Components/footer'
 
 function page() {
   return (
@@ -65,6 +66,7 @@ function page() {
         </div>
       </div>
     </div>
+    <Footer/>
     </div>
   )
 }
