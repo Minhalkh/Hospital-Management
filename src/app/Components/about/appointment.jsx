@@ -29,13 +29,13 @@ function appointment() {
   ])
   return (
       <div className=''> 
-            <div className='flex justify-between items-center gap-7 mx-28 mt-28'>
+            <div className='flex justify-between items-center mx-28 mt-28'>
               {ourServices.map((items, index)=>{
                 return(
-                 <div key={index}>
-                  <FontAwesomeIcon icon={items.icon} size='2xl'/>
-                  <h1 className='font-semibold'>{items.title}</h1>
-                  <p>{items.desc}</p>
+                 <div key={index} className='flex flex-col items-center gap-4'>
+                  <FontAwesomeIcon icon={items.icon} size='3x'/>
+                  <h1 className='font-semibold text-2xl'>{items.title}</h1>
+                  <p className='text-center'>{items.desc}</p>
                  </div>
                 )
               })}
