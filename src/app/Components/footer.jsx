@@ -8,7 +8,7 @@ function footer() {
       <h1 className='text-xl'>ABOUT GLOBAL HOSPITALS</h1>
       <p className='text-gray-400'>Lorem ipsum dolor sit amet, ne nam purto nihil impetus, an facilisi accommodare sea</p></div>
       <div>
-        <h1 className='text-xl'>GLOBAL HOSPITALS</h1>
+        <h1 className='text-xl text-white'>GLOBAL HOSPITALS</h1>
         <p className='text-gray-400'>Nam leo lorem, tincidunt id risus ut, ornare tincidunt naqunc sit amet.</p></div>
         <div>
             <h1 className='text-xl'>OUR LOCATION</h1>

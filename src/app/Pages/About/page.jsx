@@ -13,7 +13,6 @@ function page() {
     <Health/>
     <Appointment/>
     <Medical/>
-    <Footer/>
     </div>
   )
 }
