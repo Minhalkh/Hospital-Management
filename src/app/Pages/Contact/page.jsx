@@ -11,21 +11,19 @@ function page() {
         <input type="text"
         name='name'
         placeholder='Your Name*'
-        className='border rounded-full p-1' />
+        className='border rounded-full p-[7px] w-[300px]' />
 
         <input type="text"
         name="name" 
         placeholder='Your Email*' 
-        className='border rounded-full p-1'/>
+        className='border rounded-full p-[7px]'/>
 
         <input type="number" name="name" 
         placeholder='Your Phone Number*' 
-        className='border rounded-full p-1'/>
+        className='border rounded-full p-[7px]'/>
         </div>
         <div>
-          <input type="text" name='name'
-          placeholder='Your Message*' 
-          className='border rounded w-[290px] h-[180px]'/>
+          <textarea name="name" type="text" placeholder='Your Message*' className='border rounded w-[290px] h-[180px] p-1'></textarea>
         </div>
         </div>
         <button className='w-[140px] h-[39px] font-bold ml-[370px] mt-8 bg-blue-700 text-white border rounded-full'>Send Message</button>
