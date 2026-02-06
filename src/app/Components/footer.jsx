@@ -28,7 +28,7 @@ function footer() {
 
         <div>
             <h1 className='text-xl mb-3'>OUR LOCATION</h1>
-            <p className='mb-8'>The Suithouse V303, Kuningan City, Jakarta Indonesia 12940</p>
+            <p className='mb-8'>The Suithouse V303, the Kuningan City, Jakarta Indonesia 12940</p>
             <h1 className='mb-8'>FOLLOW US</h1>
            </div>
         </div>
