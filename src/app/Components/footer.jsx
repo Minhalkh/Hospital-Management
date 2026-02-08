@@ -6,7 +6,7 @@ function footer() {
         <div className='grid grid-cols-3 text-white gap-20 ml-[140px] mt-20'>
         <div className=''>
       <h1 className='text-xl mb-3'>ABOUT GLOBAL HOSPITALS</h1>
-      <p className='mb-8'>Lorem ipsum dolor sit amet, ne nam purto nihil impetus, an facilisi accommodare sea</p>
+      <p className='mb-8'>Lorem ipsum dolor the sit amet, ne nam purto nihil impetus, an facilisi accommodare sea</p>
       <h1 className='text-xl'>INFORMATION</h1>
         <ul className='mb-8'>
           <li>Home</li>
