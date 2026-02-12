@@ -12,11 +12,17 @@ function Patient() {
     const [options, setOptions] = useState(1)
   return (
      <div className='flex justify-between my-14 mx-8'>
+
+
+      {/* Left Side */}
         <div className='flex flex-col gap-4 my-28 ml-30'>
         <Image src={Logo} alt='Logo' className='size-14 ml-8 animate-bounce'/>
         <h1 className='text-white text-3xl'>Welcome</h1>
         </div>
         
+
+
+        {/* Right Side */}
         <div className='bg-white w-200 rounded-l-[100px]'>
           <div className='w-64 h-9 bg-blue-700 ml-127 mt-4 rounded-full'>
           <div className='p-1 text-white flex justify-around'>
