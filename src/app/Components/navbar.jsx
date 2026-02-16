@@ -16,11 +16,11 @@ function navbar() {
         {/* Right side of Navbar */}
         <ul className='flex flex-row gap-12 text-white text-base'>
                 <li>
-                  <Link href="/" className="cursor-pointer">Home</Link></li>
+                  <Link href="/" className="cursor-pointer">HOME</Link></li>
                     <li>
-                      <Link href="/../Pages/About" className="cursor-pointer">About Us</Link></li>
+                      <Link href="/../Pages/About" className="cursor-pointer">ABOUT US</Link></li>
                <li>
-                <Link href="../Pages/Contact" className="cursor-pointer">Contact</Link></li>
+                <Link href="../Pages/Contact" className="cursor-pointer">CONTACT</Link></li>
         </ul>
     </nav>
   )

@@ -1,5 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCalendar, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link'
 
 function footer() {
   return (
@@ -19,17 +21,33 @@ function footer() {
       <div>
         <h1 className='text-xl mb-3'>GLOBAL HOSPITALS</h1>
         <p className='mb-8'>Nam leo lorem, tincidunt id risus ut, ornare tincidunt naqunc sit amet.</p>
-         <ul className='mb-8'>
-          <li> Monday - Saturday, 8am to 10pm</li>
-          <li> +62 0888 904 711</li>
-          <li> global@hospitals.com</li>
+         <ul className='mb-8 '>
+          <li className='flex items-center gap-2'>
+            <FontAwesomeIcon icon={faCalendar} />
+            <p>Monday - Saturday, 8am to 10pm</p>
+          </li>
+          <li className='flex items-center gap-2 my-4'> 
+            <FontAwesomeIcon icon={faPhone} />
+            <p>+62 0888 904 711</p>
+          </li>
+          <li className='flex items-center gap-2'> 
+            <FontAwesomeIcon icon={faEnvelope}/>
+            <p>global@hospitals.com</p>
+          </li>
          </ul>
             </div>
 
         <div>
             <h1 className='text-xl mb-3'>OUR LOCATION</h1>
             <p className='mb-8'>The Suithouse V303, Kuningan City, Jakarta Indonesia 12940</p>
-            <h1 className='mb-8'>FOLLOW US</h1>
+            <h1 className=''>FOLLOW US</h1>
+            <div className='my-2 flex items-center gap-4'>
+              <Link href='#' className='bg-[#3873ae] p-2 hover:bg-[#4893ce] duration-200 ease-in-out'><FontAwesomeIcon icon={faEnvelope}/></Link>
+              <Link href='#' className='bg-[]'><FontAwesomeIcon icon={faCalendar}/></Link>
+              <Link href='#'><FontAwesomeIcon icon={faPhone}/></Link>
+              <Link href='#'><FontAwesomeIcon icon={faCalendar}/></Link>
+              <Link href='#'><FontAwesomeIcon icon={faPhone}/></Link>
+            </div>
            </div>
         </div>
   )

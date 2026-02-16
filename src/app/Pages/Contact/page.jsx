@@ -1,32 +1,39 @@
 import React from 'react'
+import Image from 'next/image'
+import RocketImg from '../../../../public/assets/images/rocketimg.png'
 
 function page() {
   return (
-    <div className='mx-[240px] my-[90px] w-[900px] rounded-l-[100px] rounded-r-[100px] h-[430px] bg-white'>
-      <div className='ml-[340px]'>
-        <h1 className=''>Drop Us a Message</h1>
+    <div className='relative mx-[240px] my-[90px] w-[900px] rounded-l-[100px] rounded-r-[100px] h-[430px] bg-white'>
+      <div className='absolute -top-12 left-1/2 -translate-x-1/2'>
+        <div className='bg-white rounded-full p-5 rotate-30'>
+          <Image src={RocketImg} alt='Rocket' width={70} height={70}/>
         </div>
-        <div className='flex justify-around items-center mt-20 mx-20'>
+      </div>
+      <div className='text-center'>
+        <h1 className=''>Drop Us a Message</h1>
+      </div>
+      <div className='flex justify-around items-center mt-20 mx-20'>
         <div className='grid grid-cols-1 gap-4'>
-        <input type="text"
-        name='name'
-        placeholder='Your Name*'
-        className='border rounded-full p-[7px] w-[300px]' />
+          <input type="text"
+          name='name'
+          placeholder='Your Name*'
+          className='border rounded-full p-[7px] w-[300px]' />
 
-        <input type="text"
-        name="name" 
-        placeholder='Your Email*' 
-        className='border rounded-full p-[7px]'/>
+          <input type="text"
+          name="name" 
+          placeholder='Your Email*' 
+          className='border rounded-full p-[7px]'/>
 
-        <input type="number" name="name" 
-        placeholder='Your Phone Number*' 
-        className='border rounded-full p-[7px]'/>
+          <input type="number" name="name" 
+          placeholder='Your Phone Number*' 
+          className='border rounded-full p-[7px]'/>
         </div>
         <div>
           <textarea name="name" type="text" placeholder='Your Message*' className='border rounded w-[290px] h-[180px] p-1'></textarea>
         </div>
-        </div>
-        <button className='w-[140px] h-[39px] font-bold ml-[370px] mt-8 bg-blue-700 text-white border rounded-full'>Send Message</button>
+      </div>
+      <button className='w-[140px] h-[39px] font-bold ml-[370px] mt-8 bg-blue-700 text-white border rounded-full'>Send Message</button>
     </div>
   )
 }
