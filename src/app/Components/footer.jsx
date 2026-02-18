@@ -41,12 +41,12 @@ function footer() {
             <h1 className='text-xl mb-3'>OUR LOCATION</h1>
             <p className='mb-8'>The Suithouse V303, Kuningan City, Jakarta Indonesia 12940</p>
             <h1 className=''>FOLLOW US</h1>
-            <div className='my-2 flex items-center gap-4'>
+            <div className='my-2 flex items-center gap-2'>
               <Link href='#' className='bg-[#3873ae] p-2 hover:bg-[#4893ce] duration-200 ease-in-out'><FontAwesomeIcon icon={faEnvelope}/></Link>
-              <Link href='#' className='bg-[]'><FontAwesomeIcon icon={faCalendar}/></Link>
-              <Link href='#'><FontAwesomeIcon icon={faPhone}/></Link>
-              <Link href='#'><FontAwesomeIcon icon={faCalendar}/></Link>
-              <Link href='#'><FontAwesomeIcon icon={faPhone}/></Link>
+              <Link href='#' className='bg-[#62C6F8] p-2 hover:bg-[#82E6FF] duration-200 ease-in-out'><FontAwesomeIcon icon={faCalendar}/></Link>
+              <Link href='#' className='bg-[#000000] p-2 hover:bg-[#333333] duration-200 ease-in-out'><FontAwesomeIcon icon={faPhone}/></Link>
+              <Link href='#' className='bg-[#51A6D3] p-2 hover:bg-[#71C6F3] duration-200 ease-in-out'><FontAwesomeIcon icon={faCalendar}/></Link>
+              <Link href='#' className='bg-[#D74980] p-2 hover:bg-[#F769A0] duration-200 ease-in-out'><FontAwesomeIcon icon={faPhone}/></Link>
             </div>
            </div>
         </div>
