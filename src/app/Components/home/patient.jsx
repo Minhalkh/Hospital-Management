@@ -11,7 +11,7 @@ function Patient() {
     const [gender, setGender] = useState ("Female")
     const [options, setOptions] = useState(1)
   return (
-     <div className='flex justify-between my-14 mx-8'>
+     <div className='flex justify-between max-sm:flex-col my-14 mx-8'>
 
 
       {/* Left Side */}
